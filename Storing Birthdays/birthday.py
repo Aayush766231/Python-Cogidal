@@ -1,12 +1,12 @@
-Jan_Birthday = "January 1, 2025"
-Mar_Birthday = "March 14, 2025"
-April_Birthday = "April 5, 2025"
-Jun_Birthday = "June 28, 2025"
-Nov_Birthday = "November 19, 2025"
+Jan_Birthday = "January 1, 2013"
+Mar_Birthday = "March 14, 2013"
+April_Birthday = "April 5, 2013"
+Jun_Birthday = "June 28, 2013"
+Nov_Birthday = "November 19, 2013"
 
-print("Here are five birthdays: ")
-print(Jan_Birthday)
-print(Mar_Birthday)
-print(April_Birthday)
-print(Jun_Birthday)
-print(Nov_Birthday)
+print("Here are the five birthdays: ")
+print("Bob: ", Jan_Birthday)
+print("Billy: ", Mar_Birthday)
+print("Raju: ", April_Birthday)
+print("Joe: ", Jun_Birthday)
+print("Rohan: ", Nov_Birthday)
