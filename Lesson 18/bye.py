@@ -4,7 +4,7 @@ try:
         print("bye")
         if number % 2 == 0:
             while True:
-                print("bye")
+                print("bye", end=" ")
         elif number % 2 == 1:
             break
         else:
