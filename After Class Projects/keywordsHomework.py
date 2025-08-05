@@ -4,4 +4,4 @@ def change(total, payment):
     spareChange = payment - total
     return spareChange
 
-print(f"{change(10, 12.5)} dollars is your change")
+print(f"{change(float(input("How much did it cost? ")), float(input("How much did you pay? ")))} dollars is your change")
