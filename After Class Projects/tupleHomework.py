@@ -1,4 +1,4 @@
-range1 = int(input("How many numbers are you multiplying? "))
+range1 = int(input("How many numbers are you averaging? "))
 print("Enter the numbers: ")
 productNums = []
 for i in range(range1):
