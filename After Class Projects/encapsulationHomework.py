@@ -2,7 +2,19 @@ class stringOriginal:
     def __init__(self, s):
         self.__s = s
     def reverse(self):
-        return self.__s[::-1]
-
-strInput = stringOriginal("Hello")
-print(strInput.reverse())
+        self.__s += " "
+        reversedList = []
+        newString = ""
+        for i in self.__s:
+            if i != " ":
+                reversedList.append(i)
+            else:
+                for j in reversed(reversedList):
+                    newString += j
+                newString += " "
+                reversedList.clear()
+        return newString.strip()
+    
+strInput = input("Enter a string: ")
+originalStr = stringOriginal(strInput)
+print(originalStr.reverse())
