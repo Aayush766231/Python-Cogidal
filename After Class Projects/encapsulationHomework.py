@@ -6,12 +6,12 @@ class stringOriginal:
         reversedList = []
         newString = ""
         for i in self.__s:
-            if i != " ":
+            if i.isalnum():
                 reversedList.append(i)
             else:
                 for j in reversed(reversedList):
                     newString += j
-                newString += " "
+                newString += i
                 reversedList.clear()
         return newString.strip()
     
