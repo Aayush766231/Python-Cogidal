@@ -19,15 +19,14 @@ def display():
         num2 = numEntry2.get()
         global product
         product = float(num1) * float(num2)
-        textBox.delete(1.0, END)
-        textBox.insert(END, f'{num1}')
-        textBox.insert(END, f' times {num2}')
-        textBox.insert(END, f' is {product}')
+        textBox.insert(END, f'{num1} times {num2} is {product} \n')
+        numEntry1.delete(0, END)
+        numEntry2.delete(0, END)
+        numEntry1.focus_set()
     except ValueError:
-        textBox.delete(1.0, END)
         textBox.insert(END, 'Please enter valid numbers')
 
-textBox = Text(height=3)
+textBox = Text(height=11)
 button = Button(text= 'Click to Multiply!', height=1, fg = 'white', bg = 'black', command= display)
 
 numEntry1.bind('<Return>', lambda numEntry: numEntry2.focus_set())
