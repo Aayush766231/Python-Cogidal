@@ -1,18 +1,17 @@
 from tkinter import *
 
-root = Tk()
-root.geometry('100x100')
-root.title('Event Handling')
+window = Tk()
+window.geometry('100x100')
+window.title('Click the Button')
+
+btn = Button(text="Click Here!")
+def handleButtonPress(event):
+    print('Button was pressed')
+btn.bind("<Button-1>", handleButtonPress)
 
 def handleKeyPress(event):
     print(event.char)
+window.bind("<Key>", handleKeyPress)
 
-root.bind('Key', handleKeyPress)
-
-def btnClicked():
-    print("The button has been clicked")
-btn = Button(text='Click Here')
 btn.pack()
-btn.bind('Click', btnClicked)
-
-root.mainloop()
+window.mainloop()
