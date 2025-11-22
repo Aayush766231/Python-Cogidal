@@ -9,7 +9,6 @@ root.rowconfigure(0, minsize=800, weight=1)
 root.columnconfigure(1, minsize=800, weight=1)
 
 def openFile():
-    '''Open a file for editing --> mode = a'''
     filepath = askopenfilename(filetypes= [
         ("Text Files", "*.txt"), ("All Files", "*.*")
     ])
